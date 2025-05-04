@@ -23,7 +23,6 @@ html {
   justify-items: center;
   background-position: left; 
 }
-/* Estilo para asegurarse de que todas las imágenes tengan el mismo tamaño */
 .img-size {
   width: 100%;    /* Hace que las imágenes ocupen todo el ancho de la columna */
   height: 200px;  /* Altura fija para todas las imágenes */
