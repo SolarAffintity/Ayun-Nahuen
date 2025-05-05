@@ -45,7 +45,7 @@ p.head {
 
 /* Banner */
 .tank-main-banner {
-  background: url('img/banner.jpg') center center/cover no-repeat;
+  background: url(img/g1.png) center center/cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -157,3 +157,4 @@ input#tab4:checked ~ #content4 {
 #movetop:hover {
   background-color: #88b68b;
 }
+
