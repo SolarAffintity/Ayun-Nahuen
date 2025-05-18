@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayün Nahuen-Contacto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayün Nahuen - Contacto</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="sass/style.scss" />
 </head>
 <body>
- 
-    <section class="tank-bootstrap-header" >
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2 fixed-top" >
+    <section class="tank-bootstrap-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2 fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="Logo" width="50" height="50" class="card-img-top img-responsive rounded-circle"></a>
-                <button class="navbar-toggler" type="button" 
-                data-toggle="collapse" data-target="#navbarSupportedContent">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo.png" alt="Logo Ayün Nahuen" width="50" height="50" class="card-img-top img-responsive rounded-circle" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
                     <span class="navbar-toggler-icon fa fa-bars"></span>
                 </button>
 
-                <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="promotion.html">Promociones</a>
-                      </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promotion.html">Promociones</a></li>
                     </ul>
                 </div>
-           </div> 
+            </div>
         </nav>
     </section>
 
@@ -47,24 +47,44 @@
         <div class="contact-top pt-5">
             <div class="container py-md-3">
                 <div class="row cont-main-top">
-    
                     <!-- Formulario de contacto -->
                     <div class="contacts12-main col-lg-6">
                         <h3 class="mb-4">Reserva tu cita</h3>
                         <p>Solicita más Información</p>
-                        <form action="#" class="main-input">
+                        <form action="#" class="main-input" novalidate>
                             <div class="top-inputs d-grid">
-                                <input type="text" name="name" placeholder="Nombre completo" required>
-                                <input type="email" name="email" placeholder="Correo electrónico" required>
-                                <textarea name="message"  rows="5" cols="49" placeholder="Escribe tu mensaje o consulta..."required></textarea>
+                                <label for="name" class="sr-only">Nombre completo</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Nombre completo"
+                                    required
+                                />
+                                <label for="email" class="sr-only">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Correo electrónico"
+                                    required
+                                />
+                                <label for="message" class="sr-only">Mensaje</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Escribe tu mensaje o consulta..."
+                                    required
+                                ></textarea>
                             </div>
-                            
-                            <div class="block">
+
+                            <div class="block mt-3">
                                 <button type="submit" class="btn btn-theme2">Enviar mensaje</button>
                             </div>
                         </form>
                     </div>
-    
+
                     <!-- Información de contacto -->
                     <div class="contact col-lg-6 mt-lg-0 mt-5">
                         <div class="cont-subs">
@@ -73,10 +93,10 @@
                                     <span class="fa fa-map-marker" aria-hidden="true"></span>
                                 </div>
                                 <div class="cont-add-rgt">
-                                    <p class="contact-text-sub">La FLorida,Santiago,Chile</p>
+                                    <p class="contact-text-sub">La Florida, Santiago, Chile</p>
                                 </div>
                             </div>
-    
+
                             <div class="cont-add add-2">
                                 <div class="cont-add-lft">
                                     <span class="fa fa-envelope" aria-hidden="true"></span>
@@ -87,91 +107,94 @@
                                     </a>
                                 </div>
                             </div>
-    
+
                             <div class="cont-add">
                                 <div class="cont-add-lft">
                                     <span class="fa fa-phone" aria-hidden="true"></span>
                                 </div>
                                 <div class="cont-add-rgt">
-                                    <a href="tel:+525555555555">
-                                        <p class="contact-text-sub">+569 65926462</p>
+                                    <a href="tel:+56965926462">
+                                        <p class="contact-text-sub">+56 9 6592 6462</p>
                                     </a>
                                 </div>
                             </div>
-    
+
                             <div class="cont-add add-3">
                                 <div class="cont-add-lft">
                                     <span class="fa fa-whatsapp" aria-hidden="true"></span>
                                 </div>
                                 <div class="cont-add-rgt">
-                                    <a href="https://wa.me/525555555555" target="_blank">
+                                    <a href="https://wa.me/56965926462" target="_blank" rel="noopener noreferrer">
                                         <p class="contact-text-sub">Escríbenos por WhatsApp</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
                 </div>
             </div>
             <!-- Mapa -->
             <div class="map mt-4">
                 <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.9626485362437!2d-70.57483752545127!3d-33.55434677334844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1284ad0b5ef%3A0x6ad8ce9b18d9453d!2sEl%20Acero%2010656%2C%20La%20Florida%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1746152438129!5m2!1ses!2scl"width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.9626485362437!2d-70.57483752545127!3d-33.55434677334844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1284ad0b5ef%3A0x6ad8ce9b18d9453d!2sEl%20Acero%2010656%2C%20La%20Florida%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1746152438129!5m2!1ses!2scl"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
         </div>
     </section>
-                  <!--pie de pagina-->
-                  <section class="tank-footer-29-main" id="footer">
-                    <div class="footer-29 text-center">
-                        <div class="container">
-                            <div class="main-social-footer-29">
-                                <a href="https://www.facebook.com/profile.php?id=61571548538477" class="facebook"><span class="fa fa-facebook"></span></a>
-                                <a href="https://x.com/home" class="twitter"><span class="fa fa-twitter"></span></a>
-                                <a href="https://www.instagram.com/ayunnahuen/" class="instagram"><span class="fa fa-instagram"></span></a>
-                                <a href="https://www.linkedin.com/in/ay%C3%BCn-nahuen-8323ab35a/" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                            </div>
-                            <div class="footer text-center py-3">
-                              <p class="mb-0">&copy; 2025 AYÜN NAHUEN.</p>
-                          </div>
-                          
-                        </div>
-                    </div>
-                    <button onclick="topFunction()" id="movetop" title="Go to top">
-                    <span class="fa fa-angle-up"></span>
-                    </button>
-                        <script>
-                            window.onscroll = function() {
-                                scrollFunction()
-                            };
-            
-                            function scrollFunction() {
-                                if(document.body.scrollTop > 20 || document.documentElement. scrollTop > 20) {
-                                    document.getElementById("movetop").style.display = "block";
-                                }else{
-                                    document.getElementById("movetop").style.display = "none";
-                                }
-                            }
-            
-                            function topFunction () {
-                                document.body.scrollTop = 0;
-                                document.documentElement.scrollTop = 0;
-                            }
-                        </script>
-                </section>
-            
-                <script>
-                    $(function(){
-                        $('.navbar-toggler').click(function(){
-                            $('body').toggleClass('noscroll');
-                        })
-            
-                    });
-                </script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        
+
+   <!-- Footer -->
+  <footer class="tank-footer-29-main bg-light pt-4">
+    <div class="text-center">
+      <div class="main-social-footer-29 mb-3">
+        <a href="https://www.facebook.com/profile.php?id=61571548538477" class="facebook mx-2"><span class="fa fa-facebook"></span></a>
+        <a href="https://x.com/home" class="twitter mx-2"><span class="fa fa-twitter"></span></a>
+        <a href="https://www.instagram.com/ayunnahuen/" class="instagram mx-2"><span class="fa fa-instagram"></span></a>
+        <a href="https://www.linkedin.com/in/ay%C3%BCn-nahuen-8323ab35a/" class="linkedin mx-2"><span class="fa fa-linkedin"></span></a>
+      </div>
+      <p class="mb-2">&copy; 2025 AYÜN NAHUEN. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón subir -->
+  <button onclick="topFunction()" id="movetop" title="Subir">
+    <span class="fa fa-angle-up"></span>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      });
+    });
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      const button = document.getElementById("movetop");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>
